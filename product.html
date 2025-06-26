@@ -1,0 +1,98 @@
+l<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Name - Fashon</title>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Fashion</div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Kids</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon">
+            <a href="../cart.html">🛒 <span id="cart-count">0</span></a>
+        </div>
+    </header>
+
+    <main class="product-page">
+        <div class="product-images">
+            <div class="main-image">
+                <img id="main-product-image" src="../images/product1.jpg" alt="Product Name">
+            </div>
+            <div class="thumbnail-images">
+                <img src="../images/product1-thumb1.jpg" alt="Product thumbnail 1">
+                <img src="../images/product1-thumb2.jpg" alt="Product thumbnail 2">
+                <img src="../images/product1-thumb3.jpg" alt="Product thumbnail 3">
+            </div>
+        </div>
+        
+        <div class="product-details">
+            <h1 id="product-name">Premium Cotton T-Shirt</h1>
+            <div class="price" id="product-price">$29.99</div>
+            <div class="rating">
+                ★★★★☆ <span class="review-count">(42 reviews)</span>
+            </div>
+            
+            <div class="product-options">
+                <div class="size-options">
+                    <label for="size">Size:</label>
+                    <select id="size">
+                        <option value="S">Small</option>
+                        <option value="M" selected>Medium</option>
+                        <option value="L">Large</option>
+                        <option value="XL">XL</option>
+                    </select>
+                </div>
+                
+                <div class="color-options">
+                    <label>Color:</label>
+                    <div class="color-swatches">
+                        <span class="color-swatch black active" data-color="black"></span>
+                        <span class="color-swatch white" data-color="white"></span>
+                        <span class="color-swatch navy" data-color="navy"></span>
+                    </div>
+                </div>
+                
+                <div class="quantity">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" min="1" max="10" value="1">
+                </div>
+            </div>
+            
+            <button id="add-to-cart" class="btn-primary">Add to Cart</button>
+            
+            <div class="product-description">
+                <h3>Description</h3>
+                <p id="product-description-text">
+                    Our premium cotton t-shirt is made from 100% organic cotton for maximum comfort. 
+                    Features a classic fit with reinforced stitching for durability. Machine washable.
+                </p>
+            </div>
+            
+            <div class="product-details-list">
+                <h3>Details</h3>
+                <ul>
+                    <li>100% Organic Cotton</li>
+                    <li>Machine Washable</li>
+                    <li>Reinforced Neckline</li>
+                    <li>Classic Fit</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+</body>
+</html>
